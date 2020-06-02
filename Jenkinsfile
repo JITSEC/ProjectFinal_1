@@ -35,13 +35,13 @@ pipeline {
           steps {
             sh ' mvn checkstyle:checkstyle'
             step([$class: 'CheckStylePublisher',
-                               //canRunOnFailed: true,
-                               defaultEncoding: '',
-                               healthy: '100',
-                               pattern: '**/target/checkstyle-result.xml',
-                               unHealthy: '90',
-                               //useStableBuildAsReference: true
-                              ])
+                                           //canRunOnFailed: true,
+                                           defaultEncoding: '',
+                                           healthy: '100',
+                                           pattern: '**/target/checkstyle-result.xml',
+                                           unHealthy: '90',
+                                           //useStableBuildAsReference: true
+                                          ])
           }
         }
 
@@ -312,10 +312,10 @@ ansible-playbook -v -i ./ansible_provisioning/hosts --extra-vars "host=productio
 environment {
 NEXUS_VERSION = 'nexus3'
 NEXUS_PROTOCOL = 'http'
-NEXUS_URL = '172.18.0.4:8081'
+NEXUS_URL = '10.0.2.15:8081'
 NEXUS_REPOSITORY = 'maven-snapshots'
 NEXUS_CREDENTIAL_ID = 'nexus-credentials'
-SONARQUBE_URL = 'http://172.18.0.2'
+SONARQUBE_URL = 'http://10.0.2.15'
 SONARQUBE_PORT = '9000'
 }
 options {

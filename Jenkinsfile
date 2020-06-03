@@ -208,7 +208,7 @@ pipeline {
    }
    agent {
     docker {
-     image 'ahmed24khaled/ansible-management'
+     image 'ansible-provisioning:1.0'
      reuseNode true
     }
    }

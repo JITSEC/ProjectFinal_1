@@ -290,7 +290,7 @@ ansible-playbook -v -i ./ansible_provisioning/hosts --extra-vars "host=productio
 environment {
 NEXUS_VERSION = 'nexus3'
 NEXUS_PROTOCOL = 'http'
-NEXUS_URL = 'ec2-52-212-29-159.eu-west-1.compute.amazonaws.com:8081'
+NEXUS_URL = '192.168.122.69:8081'
 NEXUS_REPOSITORY = 'maven-snapshots'
 NEXUS_CREDENTIAL_ID = 'nexus-credentials'
 SONARQUBE_URL = 'http://192.168.122.69'

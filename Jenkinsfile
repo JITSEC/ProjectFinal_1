@@ -61,6 +61,8 @@ pipeline {
         anyOf {
           branch 'master'
           branch 'develop'
+          branch 'you_br'
+          
         }
 
       }
@@ -88,6 +90,7 @@ pipeline {
         anyOf {
           branch 'master'
           branch 'develop'
+          branch 'you_br'
         }
 
       }
@@ -169,6 +172,7 @@ pipeline {
         anyOf {
           branch 'master'
           branch 'develop'
+          branch 'you_br'
         }
 
       }
@@ -230,6 +234,7 @@ stage('Deploy to Staging Servers') {
     anyOf {
       branch 'master'
       branch 'develop'
+      branch 'you_br'
     }
 
   }

@@ -293,7 +293,7 @@ NEXUS_PROTOCOL = 'http'
 NEXUS_URL = 'ec2-52-212-29-159.eu-west-1.compute.amazonaws.com:8081'
 NEXUS_REPOSITORY = 'maven-snapshots'
 NEXUS_CREDENTIAL_ID = 'nexus-credentials'
-SONARQUBE_URL = 'master'
+SONARQUBE_URL = 'http://192.168.122.69:'
 SONARQUBE_PORT = '9000'
 }
 options {

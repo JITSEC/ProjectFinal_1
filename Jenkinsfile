@@ -34,13 +34,13 @@ pipeline {
           }
           steps {
             step([$class: 'CheckStylePublisher',
-                                                                               //canRunOnFailed: true,
-                                                                               defaultEncoding: '',
-                                                                               healthy: '100',
-                                                                               pattern: '**/target/checkstyle-result.xml',
-                                                                               unHealthy: '90',
-                                                                               //useStableBuildAsReference: true
-                                                                              ])
+                                                                                           //canRunOnFailed: true,
+                                                                                           defaultEncoding: '',
+                                                                                           healthy: '100',
+                                                                                           pattern: '**/target/checkstyle-result.xml',
+                                                                                           unHealthy: '90',
+                                                                                           //useStableBuildAsReference: true
+                                                                                          ])
           }
         }
 
@@ -238,7 +238,7 @@ NEXUS_PROTOCOL = 'http'
 NEXUS_URL = 'ec2-52-212-29-159.eu-west-1.compute.amazonaws.com:8081'
 NEXUS_REPOSITORY = 'maven-snapshots'
 NEXUS_CREDENTIAL_ID = 'nexus-credentials'
-SONARQUBE_URL = 'http://127.0.0.1'
+SONARQUBE_URL = 'http://10.0.2.15'
 SONARQUBE_PORT = '9000'
 }
 options {

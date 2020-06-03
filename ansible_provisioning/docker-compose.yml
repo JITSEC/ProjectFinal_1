@@ -4,5 +4,5 @@ services:
   ansible_provisioning:
     build: .
     volumes:
-      -'../jenkins-data/:/jenkins-data'
+      - '../jenkins-data/:/jenkins-data'
     

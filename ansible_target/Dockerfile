@@ -1,4 +1,4 @@
-FROM ubunutu-ssh-server
+FROM ansible-provisioning:1.0
 
 # create user - ansible - for ssh access and enable sudo operations
 RUN apt-get update && \

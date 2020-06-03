@@ -9,9 +9,16 @@
     debug: 
       msg: "URL {{app_src_url}}"
 
+#Only if Nexus on public IP (accessible worldwide)
   - name: get the WAR
     get_url:
       url={{app_src_url}}
+      dest={{tmp_war}}
+
+#Only if Nexus locally installed and not accessible from internet
+  - name: copy the WAR
+    copy:
+      src={{wkspc}}/target/{{warname}}
       dest={{tmp_war}}
 
   - name: compute the MD5 of the new WAR
